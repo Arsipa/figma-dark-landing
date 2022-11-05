@@ -1,0 +1,473 @@
+:root {
+    /* добавление переменных */
+    --dark-background: #181818;
+    --blue: #4452FE;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+button, input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+img {
+    object-fit: cover;
+}
+
+.container {
+    width: content-w;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.landing {
+    /* свойства для всех элементов */
+    font-family: 'Graphik', sans-serif;
+    /* шрифт */
+    color: white;
+    /* цвет текста */
+}
+
+.landing img {
+    /* картинки */
+    object-fit: cover;
+}
+
+.landing header {
+    /* хедер */
+    background: var(--dark-background);
+    padding: 20px 270px;
+}
+
+.landing nav {
+    /* навигация */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+}
+
+.landing nav ul {
+    display: flex;
+    gap: 50px;
+    color: white;
+}
+
+.landing nav ul li a {
+    color: white;
+}
+
+.landing nav ul li a:hover {
+    /* свойства при наведении */
+    color: var(--blue);
+}
+
+.landing nav>a {
+    padding: 14px 46px;
+    font-size: 18px;
+    border: 1px solid white;
+    color: white;
+}
+
+.landing nav>a:hover, .first-page a:hover {
+    background: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.landing h1 {
+    /* заголовок первого уровня */
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 88px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.landing h2 {
+    /* заголовок второго уровня */
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: normal;
+}
+
+.landing .page {
+    background: var(--dark-background);
+}
+
+.landing .page>p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 95px;
+}
+
+.landing .first-page {
+    /* первая секциям */
+    text-align: center;
+    background: var(--dark-background);
+    padding: 95px 0px 150px 0px;
+}
+
+.landing .first-page ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.landing .first-page ul li a {
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    display: block;
+    padding: 20px 40px;
+    border: 1px solid white;
+    margin: 0px 20px;
+    color: white;
+}
+
+.landing .first-page img {
+    width: 100%;
+}
+
+.landing .second-page {
+    /* вторая секция */
+    padding: 0px 200px 150px 200px;
+}
+
+.landing .second-page>section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landing .second-page .features-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing .features-description-self {
+    margin-bottom: 70px;
+}
+
+.landing .features-description-self>div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.landing .features-description-self .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    align-self: flex-start;
+}
+
+.landing .features-description-self>div img {
+    align-self: flex-start;
+    margin-top: 6px;
+}
+
+.landing .features-description-self>p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+.landing .third-page {
+    /* третья секция */
+    padding: 0px 260px 150px 260px
+}
+
+.landing .third-page>section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.landing .contents-self {
+    background: white;
+    padding: 40px 36px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing .contents-self p:first-child {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.landing .contents-self p:nth-child(2) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    color: #5C5C5C;
+}
+
+.landing .contents-self a {
+    padding: 14px 46px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    background: var(--blue);
+    display: table-cell;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.landing .contents-self a:hover {
+    background: var(--dark-background);
+}
+
+.landing .contents-self img {
+    flex-grow: 1;
+}
+
+.landing .btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+.landing .fourth-page {
+    /* четвёртая секция */
+    padding: 0px 200px 150px 200px;
+}
+
+.landing .fourth-page section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.landing .fourth-page section img {
+    border-radius: 20px;
+}
+
+.landing .fourth-page a, .fifth-page a {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding: 14px 40px;
+    border: 1px solid white;
+}
+
+.landing .fourth-page a:hover, .fifth-page a:hover {
+    background: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.landing .fifth-page {
+    /* пятая секция */
+    padding: 0px 350px 150px 350px;
+    text-align: center;
+}
+
+.landing .fifth-page img {
+    margin-bottom: 50px;
+}
+
+.landing .sixth-page {
+    /* шестая секция */
+    padding: 0px 200px 150px 200px;
+}
+
+.landing .sixth-page article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.landing .sixth-page article>section {
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 40px;
+}
+
+.landing .sixth-page .person {
+    display: flex;
+}
+
+.landing .person {
+    margin-bottom: 30px;
+}
+
+.landing .person img {
+    margin-right: 15px;
+}
+
+.landing .sixth-page section>p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+.landing .person p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+.landing .person p:last-child {
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.landing .seventh-page {
+    /* седьмая секция */
+    padding: 0px 150px 150px 150px;
+}
+
+.landing .seventh-page article {
+    display: flex;
+    background: #343434;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.landing .open-type-text {
+    padding: 70px;
+}
+
+.landing .open-type-text a {
+    display: table-cell;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding: 20px 60px;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+}
+
+.landing .open-type-text a:hover {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.landing .open-type-img {
+    display: flex;
+}
+
+.landing .open-type-img img {
+    align-self: flex-end;
+    border-radius: 0px 0px 30px 0px;
+}
+
+.landing .seventh-page .open-type-text p {
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.landing footer {
+    /* футер */
+    background: var(--dark-background);
+    padding: 50px 200px 100px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.landing footer section:first-child {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.landing footer section ul li:first-child {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding: 0px 0px 20px 0px;
+    font-weight: 500;
+}
+
+.landing footer section ul li {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    display: block;
+    padding: 20px 0px 0px 0px;
+    font-weight: 500;
+}
+
+.landing footer section ul li a {
+    color: white;
+}
+
+.landing footer a:hover {
+    color: var(--blue);
+}
+
+.landing .footer-contacts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.landing .footer-contacts a {
+    color: white;
+}
+
+.landing .footer-contacts img {
+    width: 31px;
+    height: 40px;
+}
+
+.landing .socials {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 40px;
+}
